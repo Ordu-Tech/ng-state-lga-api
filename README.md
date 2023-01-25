@@ -13,20 +13,29 @@ You can make a GET request to the API using your preferred HTTP client.
 
 Example using **`curl`**:
 
+**GET list of all states**
 ```
-curl http://api.state-lga.com/state/
+curl http://state-lga-api.ordutech.com/
+```
+
+**GET list of all LGAs in states**
+```
+curl http://state-lga-api.ordutech.com/state/
 ```
 
 Example using **`fetch`** in **`JavaScript`**:
 
+**GET list of all states**
 ```
-// GET list of all states
 fetch('http://state-lga-api.ordutech.com/')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error))
+```
 
-// GET list of all LGAs in states
+**GET list of all LGAs in states**
+```
+
 let state = 'rivers'
 fetch('http://state-lga-api.ordutech.com/${state}/')
   .then(response => response.json())
