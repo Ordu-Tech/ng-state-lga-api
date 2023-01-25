@@ -26,11 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
 $parts = explode('/', $_SERVER['REQUEST_URI']);
 if (isset($parts[1]) && $parts[1] == 'api') {
-    // if (gettype($parts[2]) != 'string') {
-    //     http_response_code(400);
-    //     echo json_encode(['error' => 'String requared in state param']);
-    //     return;
-    // };
     include __DIR__ . '/Api.php';
     $api = new Api($parts);
     die;
