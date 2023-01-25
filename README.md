@@ -13,19 +13,19 @@ You can make a GET request to the API using your preferred HTTP client.
 
 Example using **`curl`**:
 
-**GET list of all states**
+`GET list of all states`
 ```
 curl http://state-lga-api.ordutech.com/
 ```
 
-**GET list of all LGAs in states**
+`GET list of all LGAs in states`
 ```
 curl http://state-lga-api.ordutech.com/state/
 ```
 
 Example using **`fetch`** in **`JavaScript`**:
 
-**GET list of all states**
+`GET list of all states`
 ```
 fetch('http://state-lga-api.ordutech.com/')
   .then(response => response.json())
@@ -33,7 +33,7 @@ fetch('http://state-lga-api.ordutech.com/')
   .catch(error => console.error(error))
 ```
 
-**GET list of all LGAs in states**
+`GET list of all LGAs in states`
 ```
 
 let state = 'rivers'
@@ -49,6 +49,7 @@ The API will return a JSON object containing an array of all the states in Niger
 
 Example response:
 
+`GET list of all states`
 ```
 //Response for state GET /
 {
@@ -56,7 +57,10 @@ Example response:
     "Adamawa": "adamawa",
     ...
 }
+```
 
+`GET list of all states`
+```
 //Response for LGAs GET /rivers/
 {
     "Port Harcourt": "port-harcourt",
