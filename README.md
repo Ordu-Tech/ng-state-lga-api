@@ -64,4 +64,4 @@ Example response:
 
 ## Support
 
-Please contact the developer if you have any questions or issues regarding this API [OrduTech](http://ordutech.com).
+Please contact the developer if you have any questions or issues regarding this API [OrduTech](https://ordutech.com/#contact).
