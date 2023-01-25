@@ -15,19 +15,19 @@ Example using **`curl`**:
 
 `GET list of all states`
 ```
-curl http://state-lga-api.ordutech.com/
+curl http://state-lga-api.ordutech.com/api/
 ```
 
 `GET list of all LGAs in states`
 ```
-curl http://state-lga-api.ordutech.com/state/
+curl http://state-lga-api.ordutech.com/api/state/
 ```
 
 Example using **`fetch`** in **`JavaScript`**:
 
 `GET list of all states`
 ```
-fetch('http://state-lga-api.ordutech.com/')
+fetch('http://state-lga-api.ordutech.com/api/')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error))
@@ -37,7 +37,7 @@ fetch('http://state-lga-api.ordutech.com/')
 ```
 
 let state = 'rivers'
-fetch('http://state-lga-api.ordutech.com/${state}/')
+fetch('http://state-lga-api.ordutech.com/api/${state}/')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error))
@@ -51,7 +51,7 @@ Example response:
 
 `GET list of all states`
 ```
-//Response for state GET /
+//Response for state GET /api/
 {
     "Abia": " abia",
     "Adamawa": "adamawa",
@@ -61,7 +61,7 @@ Example response:
 
 `GET list of all states`
 ```
-//Response for LGAs GET /rivers/
+//Response for LGAs GET /api/rivers/
 {
     "Port Harcourt": "port-harcourt",
     "Obio-Akpor": "obio-akpor",
