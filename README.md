@@ -60,7 +60,6 @@ Example response:
 
 - Make sure to replace the url with the correct endpoint
 - Also, check for any error message or status code returned by the API
-- Check for any dependancy you might need to run the API
 
 ## Support
 
